@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&family=Fira+Sans:wght@300;400;500&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: #454f6f;
+}
+.logo{
+    color: white;
+    margin: 0 1rem;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* section */
+section{
+    width: 100%;
+    background-color:#e6834c ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.text img{
+    width: 100%;
+    border-radius: 50%;
+}
+.text{
+    flex-basis: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+.text h1{
+    font-size: 3rem;
+    color: white;
+}
+.text p{
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+}
+/* about */
+.about{
+    width: 90%;
+    background-color: #d7ecff;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+.about h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.about p{
+    line-height: 1.5;
+    text-align: justify;
+}
+/* foods */
+.food{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.food .box{
+    width: 30%;
+    padding: 2rem;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.box p{
+    font-weight: 600;
+}
+/* form */
+.form{
+    width: 90%;
+    margin: auto;
+    background-color: #d7ecff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form input, button{
+    width: 37.5rem;
+    height: 1.8rem;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+    border: 0;
+}
+.form button{
+    background-color: #e6834c;
+    font-size: 1rem;
+    color: white;
+}
+.form input:focus{
+    outline: none;
+}
+/* footer */
+.sub-footer{
+    background-color: #e6834c;
+    text-align: center;
+    padding: 0.5rem;
+}
+/* media query */
+@media (max-width: 680px){
+    .form input, button{
+        width: 400px;
+    }
+    .text{
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    .food{
+        flex-direction: column;
+    }
+    .food .box{
+        width: 90%;
+    }
+}
+@media (max-width: 460px){
+    .form input, button{
+        width: 200px;
+    }
+}
